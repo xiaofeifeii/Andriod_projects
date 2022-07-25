@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#90B44B"
+            android:gravity="center"
+            android:text="接收区"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:verticalScrollbarPosition="defaultPosition"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:id="@+id/receiveScrolView"
+            android:layout_width="match_parent"
+            android:layout_height="383dp">
+
+            <TextView
+                android:id="@+id/in"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/connectButton"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:background="#3e76c3"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="连接蓝牙设备" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
